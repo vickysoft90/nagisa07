@@ -1,0 +1,396 @@
+
+
+body {
+    height: 100%;
+    background: url(../images/area03_ph09.png) center center fixed;
+    background-size: cover;
+}
+
+.history-p {
+    height: 100%;
+    background: url(../images/area03_ph07.png) center center fixed;
+    background-size: cover;
+}
+
+.shade {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.blackboard {
+    position: relative;
+    width: 400px;
+    margin: 7% auto;
+    border: tan solid 12px;
+    border-top: #bda27e solid 12px;
+    border-left: #b19876 solid 12px;
+    border-bottom: #c9ad86 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+   /* background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    background-color: #333;*/
+}
+
+.blackboard:before {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 175deg, transparent, transparent 40px, rgba(120, 120, 120, 0.1) 100px, rgba(120, 120, 120, 0.1) 110px, transparent 220px, transparent), linear-gradient( 200deg, transparent 80%, rgba(50, 50, 50, 0.3)), radial-gradient( ellipse at right bottom, transparent, transparent 200px, rgba(80, 80, 80, 0.1) 260px, rgba(80, 80, 80, 0.1) 320px, transparent 400px, transparent);
+    border: #2c2c2c solid 2px;
+}
+
+
+.container h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.2em;
+  color: rgba(238, 238, 238, 0.7);
+  text-align: center;
+  padding-top: 0;
+}
+
+.drink-type h3 img {
+    width: 60%;
+}
+
+.container {
+    padding: 100px 20px 70px;
+}
+
+p {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+/*******FORMS******/
+label {
+    vertical-align: middle;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2em;
+    color: rgba(238, 238, 238, 0.7);
+}
+
+
+p:nth-of-type(5) > label {
+    vertical-align: top;
+}
+
+input {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.8);
+    line-height: .6em;
+    outline: none;
+}
+
+input[type="text"] {
+    color: #333;
+    background-color:  rgba(238, 238, 238, 0.7);
+    text-align: center;
+    margin: 0;
+}
+input[type="number"] {
+    color: #333;
+    background-color:  rgba(238, 238, 238, 0.7);
+    border-radius: 8px;
+    width: 120px; 
+}
+input[type="submit"] {
+    cursor: pointer;
+    color: #333;
+    background-color:  rgba(238, 238, 238, 0.7);
+    line-height: 1em;
+    padding: 10px;
+    border-radius: 8px;
+    float: right;
+}
+
+input[type="submit"]:focus {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+    text-shadow: none;
+}
+
+::selection {
+    background: rgba(238, 238, 238, 0.4);
+    color: rgba(238, 238, 238, 0.3);
+    text-shadow: none;
+}
+
+
+/***************************************/
+
+.drink-type {
+  text-align: center;
+  width: 100%;
+}
+
+/* buttons */
+
+.classic {
+    font-size: 1.5rem;
+    padding: 2px 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+	background-image: linear-gradient(to right, #bda27e, #FCF6BA, #FBF5B7, #c9ad86);
+	color: #6d5e49;	
+	background-position: right bottom;
+    cursor: pointer;
+    font-family:'HG行書体';
+    font-weight: 900;
+    border-radius: 8px;
+} 
+
+
+.up {
+    border-radius: 10px 10px 0 0;
+}
+
+.down {
+    border-radius: 0 0 10px 10px;
+}
+
+/* smartphone display */
+
+@media(max-width:480px){
+    .classic {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 25px 10px 10px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 70px;
+    }
+
+    .blackboard {
+        width: 300px;
+    }
+
+    .container h3 {
+        font-size: 25px;
+    }
+
+}
+
+
+.list p {
+    padding: 50px;
+    background-image: linear-gradient( 150deg, rgba(73, 73, 73, 0.65), transparent);
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+
+.list {
+    color: #fff;
+  }
+
+#english1:hover span {display:none}
+#english1:hover:before {content:"Sake"}
+
+#english2:hover span {display:none}
+#english2:hover:before {content:"Beer"}
+
+#english3:hover span {display:none}
+#english3:hover:before {content:"Whisky"}
+
+#english4:hover span {display:none}
+#english4:hover:before {content:"Cocktails 。Fruit wine"}
+
+#english5:hover span {display:none}
+#english5:hover:before {content:"Wine"}
+
+#english6:hover span {display:none}
+#english6:hover:before {content:"Distilled beverages"}
+
+#english7:hover span {display:none}
+#english7:hover:before {content:" Nagisatei's originals"}
+
+#english8:hover span {display:none}
+#english8:hover:before {content:"Non-alcoholic drinks"}
+
+
+
+.bottomfooter {
+    text-align: center;
+    font-size: 11px;
+}
+
+.bottomfooter span {
+    color: #c2a782;
+}
+
+
+@media (min-width: 1200px) {
+    .list {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+}
+
+.send-order {
+    text-align: right;
+}
+
+.order-buttons {
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.minus-item{
+    background-image: linear-gradient(to right, #bda27e, #FCF6BA, #b19876, #FBF5B7, #c9ad86);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 35px;
+}
+
+.plus-item {
+    background-image: linear-gradient(to right, #bda27e, #FCF6BA, #b19876, #FBF5B7, #c9ad86);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 35px;
+}
+
+.item-count {
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    width: 35px;
+}
+
+.delete-item-styling img{
+    cursor: pointer;
+    height: 28px;
+    width: 25px;
+}
+
+
+.clear-cart {
+    background-color: #f71735;
+    background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+}
+
+.cart-drinks {
+    padding: 20px;
+    background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+
+.name1 p {
+    color: #bfbfbf;
+    line-height: 0;
+}
+
+.name1 img {
+    line-height: 0;
+}
+
+.button1 {
+    float: right;
+    margin-right: 0;
+    font-size: 20px;
+    color: white;	
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+} 
+
+.button1-color {
+    margin: 4px;
+    background-image: linear-gradient(to right, #bda27e, #FCF6BA, #FBF5B7, #c9ad86);
+    color: #6d5e49;	
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.h2title {
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 2px #000000;
+}
+
+.list4 {
+    padding: 30px;
+    background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
+    border-radius: 9px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.qty {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 80%; 
+}
+
+
+.defaultmessage {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+    font-size: large;
+    text-shadow: 0.5px 0.5px 2px #000000;
+}
+
+
+/**********************************************************************************/
+
+.drinkimage {
+
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;  
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.drink-caption {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(172, 170, 170);
+}
