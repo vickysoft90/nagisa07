@@ -25,6 +25,8 @@ $response = (string)curl_exec($request); // execute curl fetch and store results
 curl_close($request); // close curl object
 
 $result = json_decode($response, true); // true turns it into an array
+$_SESSION['uname']=$result['name'];
+$_SESSION['uroom']=$result['room'];
 //echo 'First Name: ' . $result['name'] . '<br />'; // why doesnt this work
 //print_r($response); //to check variables
                 ?>
