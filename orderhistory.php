@@ -39,8 +39,10 @@ if(isset($_REQUEST['ord'])){
 	$sql = "SELECT * FROM menunagisa07.confirmedorders where or_order_id='$ord' order by or_order_id DESC";
                     
 }else{
-	$ord=$_SESSION['useridmap'];
-	$sql = "SELECT * FROM menunagisa07.confirmedorders where or_userid='$ord' order by or_order_id DESC";
+	$uname=$_SESSION['uname'];
+	$uroom=$_SESSION['uroom'];
+
+	$sql = "SELECT * FROM menunagisa07.confirmedorders where guestname='$uname' and roomno='$roomno' order by or_order_id DESC";
     
 }
 					                                            $result = $conn->query($sql);
